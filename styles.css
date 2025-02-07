@@ -93,3 +93,27 @@ font-size: 2em;
 text-transform: uppercase;
 font-weight: lighter;
 }
+
+.bergmaedchenContainer{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.bergmaedchenBild{
+    max-width: 100%;
+    height: auto;
+    filter:brightness(50%)
+}
+
+.bergmaedchenText{
+    position:absolute;
+top: 50%;
+left: 30%;
+transform: translate(-20%,-110%);
+color: white;
+text-align: center;
+font-size: 2em;
+text-transform: uppercase;
+font-weight: lighter;
+}
