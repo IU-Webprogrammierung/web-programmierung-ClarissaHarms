@@ -4,8 +4,20 @@ head{
     font-family: 'poppins', sans-serif;
 }
 
+header{
+    background-color: white;
+    padding: 10px 0;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+}
+
 body{
     font-family: 'poppins', sans-serif;
+    padding-top: 70px;
+    margin:0;
 }
 
 .quote{
@@ -23,7 +35,61 @@ nav ul{
 
 }
 
-img{
+nav a.active{
+    color: #6d9aa7;
+}
+
+nav a[href="index.html"].active{
+    color: #6d9aa7;
+}
+
+nav a[href="challenges.html"].active{
+    color: #6d9aa7;
+}
+
+nav a[href="übermich.html"].active{
+    color: #6d9aa7;
+}
+
+nav a[href="ressourcen.html"].active{
+    color: #6d9aa7;
+}
+
+nav ul li a{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav ul li a:hover{
+    color: #6d9aa7;
+}
+
+.meermaedchenContainer{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.meermaedchenBild{
     max-width: 100%;
     height: auto;
+    filter:brightness(50%)
+}
+
+.textMeermaedchenBild{
+position:absolute;
+top: 80%;
+left: 30%;
+transform: translate(-20%,-110%);
+color: white;
+text-align: center;
+font-size: 2em;
+text-transform: uppercase;
+font-weight: lighter;
 }
