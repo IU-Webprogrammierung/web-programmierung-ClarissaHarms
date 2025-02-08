@@ -36,23 +36,23 @@ nav ul{
 }
 
 nav a.active{
-    color: #6d9aa7;
+    color: #52757F;
 }
 
 nav a[href="index.html"].active{
-    color: #6d9aa7;
+    color: #52757F;
 }
 
 nav a[href="challenges.html"].active{
-    color: #6d9aa7;
+    color: #52757F;
 }
 
 nav a[href="übermich.html"].active{
-    color: #6d9aa7;
+    color: #52757F;
 }
 
 nav a[href="ressourcen.html"].active{
-    color: #6d9aa7;
+    color: #52757F;
 }
 
 nav ul li a{
@@ -67,7 +67,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #6d9aa7;
+    color: #52757F;
 }
 
 .meermaedchenContainer{
@@ -79,7 +79,7 @@ nav ul li a:hover{
 .meermaedchenBild{
     max-width: 100%;
     height: auto;
-    filter:brightness(50%)
+    filter:brightness(30%)
 }
 
 .textMeermaedchenBild{
@@ -103,7 +103,7 @@ font-weight: lighter;
 .bergmaedchenBild{
     max-width: 100%;
     height: auto;
-    filter:brightness(50%)
+    filter:brightness(30%)
 }
 
 .bergmaedchenText{
