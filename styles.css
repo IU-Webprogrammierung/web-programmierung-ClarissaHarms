@@ -16,7 +16,6 @@ header{
 
 body{
     font-family: 'poppins', sans-serif;
-    padding-top: 70px;
     margin:0;
     background-color: #F8F8FF
 
@@ -68,66 +67,6 @@ nav ul li a:hover{
     color: #52757F;
 }
 
-.meermaedchenContainer{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.meermaedchenBild{
-    max-width: 100%;
-    height: auto;
-    filter:brightness(30%)
-}
-
-.textMeermaedchenBild{
-    position:absolute;
-    top: 80%;
-    left: 30%;
-    transform: translate(-20%,-110%);
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: lighter;
-}
-
-.bergmaedchenContainer{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.bergmaedchenBild{
-    max-width: 100%;
-    height: auto;
-    filter:brightness(30%)
-}
-
-.bergmaedchenText{
-    position:absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-20%,-110%);
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: lighter;
-}
-
-.lachenderMannContainer{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.lachenderMannBild{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
 h2{
     color: #52757F;
 }
@@ -136,11 +75,41 @@ h3{
     color: #696969;
 }
 
-.clarissaBild{
-    border-radius: 50%;
+.textMeermaedchenBild,
+.bergmaedchenText{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 
 
+.clarissaBild{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.meermaedchenContainer,
+.bergmaedchenContainer,
+.lachenderMannContainer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.meermaedchenBild,
+.bergmaedchenBild,
+.lachenderMannBild {
+    max-width: 100%;
+    height: auto;
+    filter:brightness(30%);
+}
 
 section{
     margin-bottom: 100px;
@@ -155,3 +124,26 @@ footer{
     padding: 1px;
 
 }
+
+/* Media Queries für verschiedene Bildschirmgrößen*/
+@media (max-width: 768px){
+    .menu-icon {
+        display:block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
