@@ -39,22 +39,6 @@ nav a.active{
     color: #52757F;
 }
 
-nav a[href="index.html"].active{
-    color: #52757F;
-}
-
-nav a[href="challenges.html"].active{
-    color: #52757F;
-}
-
-nav a[href="übermich.html"].active{
-    color: #52757F;
-}
-
-nav a[href="ressourcen.html"].active{
-    color: #52757F;
-}
-
 nav ul li a{
     list-style: none;
     display: flex;
