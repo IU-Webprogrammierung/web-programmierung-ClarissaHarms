@@ -45,6 +45,7 @@ nav ul{
     font-weight: bold;
     color: #333;
     text-decoration: none;
+    width: 50%;
 
 }
 
@@ -123,6 +124,15 @@ footer{
     color:white;
     padding: 1px;
 
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon img{
+    width: 30px;
+    height: auto;
 }
 
 /* Media Queries für verschiedene Bildschirmgrößen*/
