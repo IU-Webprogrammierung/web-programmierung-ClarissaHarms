@@ -49,6 +49,15 @@ nav ul{
 
 }
 
+body.ressourcen main{
+margin-top: 70px;
+}
+
+body.ueberMich main{
+    margin-top: 70px;
+}
+
+
 nav a.active{
     color: #52757F;
 }
