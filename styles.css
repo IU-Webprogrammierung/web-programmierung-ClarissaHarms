@@ -35,9 +35,8 @@ main {
 section{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
 }
+
 nav ul{
     list-style: none;
     display: flex;
@@ -51,10 +50,15 @@ nav ul{
 
 body.ressourcen main{
 margin-top: 70px;
+margin: 20px;
 }
 
 body.ueberMich main{
     margin-top: 70px;
+}
+
+#subtextChallenges, #maincontentChallenges, #aboutMe, #vision, #kontakt, #artikel, #buecher, #kommentare {
+    margin: 20px;
 }
 
 
@@ -85,6 +89,12 @@ h3{
     color: #696969;
 }
 
+#zitat, #subtextStartseite,#mainContentStartseite, #subtextChallenges, #mainContentChallenges {
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
 .textMeermaedchenBild,
 .bergmaedchenText{
     position:absolute;
@@ -99,12 +109,13 @@ h3{
     white-space: nowrap;
 }
 
-
 .clarissaBild{
     border-radius: 50%;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
+    transform: translate(50%)
 }
+
 
 .meermaedchenContainer,
 .bergmaedchenContainer,
@@ -146,6 +157,7 @@ footer{
     margin-left: 10px;
 }
 
+
 /* Media Queries für verschiedene Bildschirmgrößen*/
 @media (max-width: 768px){
     .meermaedchenBild{
@@ -154,12 +166,20 @@ footer{
         height: 100vh;
     }
 
+    
+
     .bergmaedchenBild{
         object-fit: cover;
         width: 100%;
         height: 100vh;
     }
 
+    .clarissaBild{
+        width: 50%;
+        height: auto;
+        display: flex;
+        transform: translate(50%);
+    }
 
     .menu-icon {
         display:block;
@@ -188,9 +208,12 @@ footer{
 }
 
 @media (max-width: 480px){
+
     .textMeermaedchenBild,
-    .bergmaedchenText{
+    .bergmaedchenText, h2{
         font-size: 1.2em;
         white-space: normal;
+        margin: 20px;
     }
+
 }
