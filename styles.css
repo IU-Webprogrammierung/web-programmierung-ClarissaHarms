@@ -87,6 +87,7 @@ h3{
     font-size: 2em;
     text-transform: uppercase;
     font-weight: lighter;
+    white-space: nowrap;
 }
 
 
@@ -156,5 +157,18 @@ footer{
     .nav-links.show {
         display: flex;
     }
+
+    .textMeermaedchenBild,
+    .bergmaedchenText{
+        font-size: 1.5em;
+        white-space: normal;
+    }
 }
 
+@media (max-width: 480px){
+    .textMeermaedchenBild,
+    .bergmaedchenText{
+        font-size: 1.2em;
+        white-space: normal;
+    }
+}
