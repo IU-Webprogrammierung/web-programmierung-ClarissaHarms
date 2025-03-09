@@ -21,8 +21,8 @@
                 <img src="./images/burgermenu.png" alt="Menü">
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Startseite</a></li>
-                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="index.html" >Startseite</a></li>
+                <li><a href="challenges.html" class="active" >Challenges</a></li>
                 <li><a href="übermich.html">Über mich</a></li>
                 <li><a href="ressourcen.html">Ressourcen</a></li>
             </ul>
@@ -32,10 +32,15 @@
         <!--Hero Section-->
         <section id="heroSectionChallenges">
             <div class="bergmaedchenContainer">
-                <img src="./images/bergmaedchen.jpg" alt="" class="bergmaedchenBild"> <!-- Dekoratives Bild-->
-                <div class="bergmaedchenText">
-                    <h1>Jede Reise beginnt mit einem ersten Schritt</h1>
-                </div>
+                <picture>
+                    <!--Bild für mobile Endgeräte-->
+                    <source media="(max-width: 768px)" img src="./images/bergmaedchenMobil.jpg">
+                     <!--Bild für Standardgeräte-->
+                     <img src="./images/bergmaedchen.jpg" alt="" class="bergmaedchenBild"> <!-- Dekoratives Bild-->
+                     <div class="bergmaedchenText">
+                         <h1>Jede Reise beginnt mit einem ersten Schritt</h1>
+                     </div>
+                </picture>
             </div>
         </section>
         <!--subText, Erklärung zu den Challenges-->
