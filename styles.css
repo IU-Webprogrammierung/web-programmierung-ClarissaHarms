@@ -7,12 +7,12 @@ head{
 header{
     background-color: white;
     padding: 10px 0;
-   position: fixed;
-   width: 100%;
-   top: 0;
-   left: 0;
-   z-index: 1000;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 body{
@@ -21,6 +21,26 @@ body{
     background-color: #F8F8FF
 
     ;
+}
+
+.challenge-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#challenge1 img, #challenge2 img, #challenge3 img{
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#challenge1 img:hover, #challenge2 img:hover, #challenge3 img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 img{
@@ -179,6 +199,26 @@ footer{
         object-fit: cover;
         width: 100%;
         height: 100vh;
+    }
+
+   .challenge-container{
+        flex-direction: column;
+        margin-bottom: 20px
+    }
+
+    #challenge1 img, #challenge2 img, #challenge3 img{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #challenge1 p, #challenge2 p, #challenge3 p{
+        margin: 0px;
+        text-align: center;
+        margin-top: 10px;
     }
 
     
