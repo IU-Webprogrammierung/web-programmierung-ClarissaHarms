@@ -197,11 +197,16 @@ footer{
         display: none;
         flex-direction: column;
         width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: center;
+        top: 0;
+        left: 0;
         text-align: center;
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 20px 0;
     }
 
     .nav-links.show {
