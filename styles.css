@@ -1,26 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-head{
-    font-family: 'poppins', sans-serif;
+
+
+#aboutMe{
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
 }
 
-header{
-    background-color: white;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#artikel{
+    padding: 20px;
+    margin-top: 50px;
 }
-
 body{
     font-family: 'poppins', sans-serif;
     margin:0;
-    background-color: #F8F8FF
+    background-color: #F8F8FF;
+}
 
-    ;
+.buchtitel:nth-child(odd) .column-left {
+     order: 1; 
+}
+
+.buchtitel:nth-child(odd) .column-right {
+     order: 2; 
+} 
+
+.buchtitel:nth-child(even) .column-left {
+    order: 2; 
+} 
+        
+.buchtitel:nth-child(even) .column-right {
+    order: 1; 
 }
 
 .challenge-container{
@@ -43,103 +54,6 @@ body{
     transition: transform 0.3s ease-in-out;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-.quote{
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-section{
-    display: flex;
-    flex-direction: column;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-    width: 50%;
-
-}
-
-body.ressourcen main{
-margin-top: 70px;
-margin: 20px;
-}
-
-body.ueberMich main{
-    margin-top: 70px;
-}
-
-#subtextChallenges, #maincontentChallenges, #aboutMe, #vision, #kontakt, #artikel, #buecher, #kommentare {
-    margin: 20px;
-}
-
-
-nav a.active{
-    color: #52757F;
-}
-
-nav ul li a{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    font-weight: lighter;
-    color: #333;
-    text-decoration: none;
-    text-transform: uppercase;
-
-}
-
-nav ul li a:hover{
-    color: #52757F;
-}
-
-h2{
-    color: #52757F;
-}
-
-h3{
-    color: #696969;
-}
-
-#zitat, #subtextStartseite,#mainContentStartseite, #subtextChallenges, #mainContentChallenges {
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
-
-.textMeermaedchenBild,
-.bergmaedchenText{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: lighter;
-    white-space: nowrap;
-}
-
-#aboutMe{
-    align-items: center;
-    text-align: center;
-}
-
 .clarissaBild{
     max-width: 30%;
     height: auto;
@@ -151,6 +65,69 @@ h3{
     border-radius: 50%;
 }
 
+
+.column-left, .column-right{
+    flex: 1;
+    margin: 100px;
+}
+
+.column-left{
+    text-align: left;
+}
+
+.column-right {
+    text-align: left; /* Text linksbündig */
+    display: flex;
+    flex-direction: column;
+}
+
+.column-right img{
+    margin-left: 20px;
+    padding-right: 20px;
+    display: block;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    margin-top: 200px;
+    border: none;
+    text-align: center;
+    background-color: #52757F;
+    color:white;
+    padding: 1px;
+}
+
+head{
+    font-family: 'poppins', sans-serif;
+}
+
+header{
+    background-color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Kommentare{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main, section {
+    display: flex;
+    flex-direction: column;
+}
 
 .meermaedchenContainer,
 .bergmaedchenContainer,
@@ -168,20 +145,6 @@ h3{
     filter:brightness(30%);
 }
 
-section{
-    margin-bottom: 100px;
-}
-
-footer{
-    margin-top: 200px;
-    border: none;
-    text-align: center;
-    background-color: #52757F;
-    color:white;
-    padding: 1px;
-
-}
-
 .menu-icon {
     display: none;
 }
@@ -192,6 +155,72 @@ footer{
     margin-left: 10px;
 }
 
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    width: 50%;
+}
+
+nav ul li a{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover, h2, h3, nav a.active{
+    color: #52757F;
+}
+
+.quote{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between; 
+}
+
+
+section{
+    margin-bottom: 100px;
+}
+
+#subtextChallenges, #maincontentChallenges, #vision, #kontakt, #buecher, #kommentare {
+    margin: 20px;
+}
+
+.textMeermaedchenBild,
+.bergmaedchenText{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    white-space: nowrap;
+}
+
+
+#zitat, #subtextStartseite,#mainContentStartseite, #subtextChallenges, #mainContentChallenges {
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
 
 /* Media Queries für verschiedene Bildschirmgrößen*/
 @media (max-width: 768px){
@@ -200,6 +229,33 @@ footer{
         width: 100%;
         height: 100vh;
     }
+
+    .buchtitel:nth-child(odd) .column-left, .buchtitel:nth-child(odd) .column-right,
+    .buchtitel:nth-child(even) .column-left, .buchtitel:nth-child(even) .column-right {
+        order: unset; /* Entfernt die Reihenfolge */
+    }
+
+    .column-left, .column-right{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+
+    .column-left img{
+        min-width: 120px;
+    }
+
+    .column-right img{
+        min-width: 120px;
+    }
+
+    .buchtitel {
+        margin-bottom: 50px;
+        padding: 0px; 
+        text-align:left;
+    }
+    
 
    .challenge-container{
         flex-direction: column;
