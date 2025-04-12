@@ -34,6 +34,14 @@ body{
     order: 1; 
 }
 
+button{
+margin-top: 10px;
+padding: 10px 20px;
+border: none;
+background-color: #52757F;
+cursor: pointer;
+color: white;
+}
 .challenge-container{
     display:flex;
     flex-direction: row;
@@ -68,23 +76,16 @@ body{
 
 .column-left, .column-right{
     flex: 1;
-    margin: 100px;
+    margin: 10px;
 }
 
 .column-left{
-    text-align: left;
+    position: relative;
+    overflow: hidden;
 }
 
 .column-right {
-    text-align: left; /* Text linksbündig */
-    display: flex;
-    flex-direction: column;
-}
-
-.column-right img{
-    margin-left: 20px;
-    padding-right: 20px;
-    display: block;
+    align-items: center;
 }
 
 
@@ -127,6 +128,9 @@ header{
 main, section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .meermaedchenContainer,
@@ -186,9 +190,6 @@ nav ul li a:hover, h2, h3, nav a.active{
 
 .row{
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    justify-content: space-between; 
 }
 
 
@@ -208,7 +209,7 @@ section{
     transform: translate(-50%,-50%);
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: lighter;
     white-space: nowrap;
@@ -224,6 +225,15 @@ section{
 
 /* Media Queries für verschiedene Bildschirmgrößen*/
 @media (max-width: 768px){
+
+    .challenges h2{
+        margin: 20px;
+    }
+
+    .column-left{
+        max-width: 100%;
+        min-width: 80%;
+    }
     .meermaedchenBild{
         object-fit: cover;
         width: 100%;
@@ -235,27 +245,7 @@ section{
         order: unset; /* Entfernt die Reihenfolge */
     }
 
-    .column-left, .column-right{
-        width: 100%;
-        margin-top: 30px;
-        margin-bottom: 0px;
-        padding: 0;
-    }
 
-    .column-left img{
-        min-width: 120px;
-    }
-
-    .column-right img{
-        min-width: 120px;
-    }
-
-    .buchtitel {
-        margin-bottom: 50px;
-        padding: 0px; 
-        text-align:left;
-    }
-    
 
    .challenge-container{
         flex-direction: column;
@@ -311,18 +301,46 @@ section{
 
     .textMeermaedchenBild,
     .bergmaedchenText{
-        font-size: 1.5em;
+        font-size: 1em !important;
         white-space: normal;
     }
 }
 
-@media (max-width: 480px){
+.main{
+    align-items: center;
+    place-items: center;
+}
 
-    .textMeermaedchenBild,
-    .bergmaedchenText, h2{
-        font-size: 1.2em;
-        white-space: normal;
+@media (max-width: 480px){
+    .challenges h2, h3{
+        padding: 20px;;
         margin: 20px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .challenges p{
+        font-size: 0.8em;
+        padding: 20px;;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .column-left{
+        max-width: 100%;
+        min-width: 80%;
+    }
+
+    .textMeermaedchenBild h1,
+    .bergmaedchenText, h2{
+        white-space: normal;
+        font-size: 1.2em;
+    }
+
+    textarea{
+    max-width: 100%;
+    min-width: 120px;
+    height: 120px;
     }
 
 }
